@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "DS-Digital";
+    src: url(../font/ds_digital/DS-DIGI.TTF);
+}
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(../font/Roboto/Roboto-Black.ttf);
+}
+:root{
+    --calc: #ffc8e9;
+    --calc-display: #f3acf3;
+    --calc-text: #333333;
+    --background: #e0dede;
+    --del-button: #D95032;
+    --buttons: #eaa4ce;
+    --display-font: "DS-Digital";
+    --button-font: "Roboto";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);   
+}
+.calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--calc);
+    width: 60%;
+    height: 70%;
+    border-radius: 15px;
+    box-shadow: 7px 6px 17px black;
+}
+
+.display {
+    position: absolute;
+    top: 10px;
+    font-family: var(--display-font);
+    font-size: 2.5rem;
+    text-align: right;
+    padding-right: 5px;
+    background-color: var(--calc-display);
+    color: var(--calc-text);
+    width: 90%;
+    height: 10%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calc button{
+    position: relative;
+    text-align: center;
+    height: 45px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--buttons);
+    box-shadow: -1px 1px 5px 1px black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: var(--button-font);
+}
+.calc .Button {
+    width: 49px;
+    
+}
+.calc .equal{
+    width: 110px;
+
+}
+.row1, 
+.row2,
+.row3,
+.row4{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.row1 {
+    top: 0px;
+}
+.row2{
+    top: 10px;
+}
+.row3{
+    top: 20px;
+}
+.row4{
+    top: 30px;
+}
+.row5{
+    display: flex;
+    position: relative;
+    top: 40px;
+}
