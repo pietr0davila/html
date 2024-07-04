@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+*{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+    font-size: 26px;
+}
+p{
+    text-align: center;
+}
+ol{
+    list-style-position: inside;
+}
+ol li{
+    text-align: center;
+    margin: 5px;
+    padding: 3px;
+    line-height: 1.8;
+}
+.divBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: #6FCF97;
+    color: white;
+    cursor: pointer;
+}
+.confirm{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 18px;
+}

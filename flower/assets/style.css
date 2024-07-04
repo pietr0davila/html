@@ -195,7 +195,7 @@ body {
   animation: grow-flower-tree 4s backwards;
 }
 .flower__line__leaf {
-  --w: 7vmin;
+  --w: 7vwmin;
   --h: calc(var(--w) + 2vmin);
   position: absolute;
   top: 20%;
