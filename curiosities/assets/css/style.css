@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: aliceblue;
+    background-color: #333;
+    height: 100vh;
+    max-height: 120vh;
+}
+h1{
+    margin: 15px 2px 0 2px;
+    text-align: center;
+    font-size: 15px;
+}
+.curiosity{
+    text-align: center;
+    width: 80%;
+    margin: 10px 10px 10px 10%;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+.curiosity p{
+    font-size: 15px;
+}
+.curiosity button{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px ;
+
+}
